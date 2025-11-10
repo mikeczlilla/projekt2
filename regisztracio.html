@@ -10,52 +10,72 @@
     <link rel="stylesheet" href="regisztracio.css">
   </head>
   <body>
-    <div class="card">
+    <div class="card">  
         <div class="card-body">
             <h1>Regisztráció</h1>
-            <form>
-                <div id="container">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Vezetéknév</label>
+            <div id="section1">
+                <form class="row g-4">
+                  <div class="mb-3 col-md-6">
+                    <label class="form-label">Vezetéknév</label>
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Keresztnév</label>
+                  <div class="mb-3 col-md-6">
+                    <label class="form-label">Keresztnév</label>
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
-                </div>
-
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email cím</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Jelszó</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div id="container">
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Település</label>
+                  <div class="mb-3 col-md-6">
+                    <label class="form-label">Felhasználónév</label>
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div><br>
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
                   </div>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Utca, házszám</label>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Jelszó</label>
+                    <input type="password" class="form-control" id="inputPassword4">
                   </div>
-                </div>
-
-                <div class="mb-3 form-check" id="checkB">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Emlékezz rám</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Bejelentkezés</button>
-                <div id="div-regisztracio">
-                    <p>Van már fiókja?</p>
-                    <p><a href="index.html">Bejelentkezés</a></p>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Jelszó ismétlése</label>
+                    <input type="password" class="form-control" id="inputPassword4">
                   </div>
+                  <hr>
+                  <div class="col-md-6">
+                    <label for="inputAddress" class="form-label">Irányítószám</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="pl. 1234">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Település</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="pl. Szentes">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Utcanév</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="pl. Kossuth utca">
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Házszám</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="pl. 12 / B">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Telefonszám</label>
+                    <input type="number" class="form-control" id="inputAddress2" placeholder="pl. 06301234567">
+                  </div>
+                </form>
 
-
-              </form>
+                
+            </div>
+            <div id="section2">
+              <div class="mb-3 form-check" id="checkB">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Emlékezz rám</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Regisztráció</button>
+              <div id="div-regisztracio">
+                  <p>Van már fiókja?</p>
+                  <p><a href="index.html">Bejelentkezés</a></p>
+              </div>
+            </div>
               
         </div>
       </div>
