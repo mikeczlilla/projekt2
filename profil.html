@@ -23,8 +23,22 @@
                     <li class="list-group-item"><b>Lakcím: </b></li>
                     <li class="list-group-item"><b>Születési idő: </b></li>
                   </ul>
-                  
-                  <button type="submit" class="btn btn-primary" formaction="index.html">Kilépés</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Kilépés
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Biztos ki akar lépni?</h1>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
+                            <button type="submit" formaction="index.html" class="btn btn-primary">Kilépés</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
             </form>
               
         </div>
