@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Nov 17. 10:19
+-- Létrehozás ideje: 2025. Nov 17. 10:27
 -- Kiszolgáló verziója: 10.4.28-MariaDB
 -- PHP verzió: 8.2.4
 
@@ -29,11 +29,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tabla` (
   `id` int(11) NOT NULL,
-  `felhasznalonev` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
   `vezeteknev` varchar(50) NOT NULL,
   `keresztnev` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `jelszo` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `szdatum` date NOT NULL,
   `tszam` varchar(25) NOT NULL,
   `iranyitoszam` int(4) NOT NULL,
