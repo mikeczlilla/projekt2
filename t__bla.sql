@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Nov 10. 11:20
+-- Létrehozás ideje: 2025. Nov 17. 09:58
 -- Kiszolgáló verziója: 10.4.28-MariaDB
 -- PHP verzió: 8.2.4
 
@@ -29,10 +29,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tábla` (
   `id` int(11) NOT NULL,
-  `email cím` varchar(50) NOT NULL,
-  `jelszó` varchar(255) NOT NULL,
-  `születési dátum` date NOT NULL,
-  `telefonszám` varchar(25) NOT NULL
+  `felhasznalonev` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `jelszo` varchar(255) NOT NULL,
+  `szdatum` date NOT NULL,
+  `tszam` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
 
 --
