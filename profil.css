@@ -18,6 +18,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .list-group{
+    margin-bottom: 10px;
+  }
   button {
     width: 200px;
     border-radius: 20px;
