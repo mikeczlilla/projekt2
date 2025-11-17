@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,6 +41,14 @@
                   </div>
                   <hr>
                   <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Telefonszám</label>
+                    <input type="number" class="form-control" id="inputAddress2" placeholder="pl. 06301234567">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Születési dátum</label>
+                    <input type="date" class="form-control" id="inputAddress2">
+                  </div>
+                  <div class="col-md-6">
                     <label for="inputAddress" class="form-label">Irányítószám</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="pl. 1234">
                   </div>
@@ -57,10 +65,7 @@
                     <label for="inputAddress2" class="form-label">Házszám</label>
                     <input type="text" class="form-control" id="inputAddress2" placeholder="pl. 12 / B">
                   </div>
-                  <div class="col-md-6">
-                    <label for="inputAddress2" class="form-label">Telefonszám</label>
-                    <input type="number" class="form-control" id="inputAddress2" placeholder="pl. 06301234567">
-                  </div>
+                  
                 </form>
 
                 
@@ -70,7 +75,10 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Emlékezz rám</label>
               </div>
-              <button type="submit" class="btn btn-primary">Regisztráció</button>
+              <form action="profil.html">
+                <button type="submit" class="btn btn-primary">Regisztráció</button>
+              </form>
+              
               <div id="div-regisztracio">
                   <p>Van már fiókja?</p>
                   <p><a href="index.html">Bejelentkezés</a></p>
