@@ -37,6 +37,7 @@ CREATE TABLE `tabla` (
   `szdatum` date NOT NULL,
   `tszam` varchar(25) NOT NULL,
   `iranyitoszam` int(4) NOT NULL,
+  `varos` varchar(50) NOT NULL,
   `utca` varchar(100) NOT NULL,
   `haz_szam` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_hungarian_ci;
