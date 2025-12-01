@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="list-group" style="width: fit-content;">
-      <a href="regisztracio-en.html" class="list-group-item list-group-item-action" style="text-align: center;"><img src="../kep/uk.png" alt="English" style="width: 40px;"></a>
+      <a href="regisztracio-english.html" class="list-group-item list-group-item-action" style="text-align: center;"><img src="../kep/uk.png" alt="English" style="width: 40px;"></a>
       <a href="../regisztracio.html" class="list-group-item list-group-item-action" style="text-align: center;"><img src="../kep/hu.png" alt="Magyar" style="width: 40px;"></a>
     </div>
     <div class="card">  
@@ -50,8 +50,8 @@
                     <input type="number" name="tfon" class="form-control" id="tfon" placeholder="zB. 06301234567">
                   </div>
                   <div class="col-md-6">
-                    <label for="szdatum" class="form-label">Geburtsdatum</label>
-                    <input type="date" name="szdatum" class="form-control" id="szdatum">
+                    <label for="inputAddress2" class="form-label">Geburtsdatum</label>
+                    <input type="date" class="form-control" id="inputAddress2" min="1900-01-01" max="2026-01-01">
                   </div>
                   <div class="col-md-6">
                     <label for="irszam" class="form-label">Postleitzahl</label>
@@ -84,7 +84,18 @@
 
                 
             </div>
-            
+            <br>
+            <div id="section2">
+              
+              <form action="index-de.html">
+                <button type="submit" class="btn btn-primary">Registrierung</button>
+              </form>
+              
+              <div id="div-regisztracio">
+                  <p>Haben Sie schon ein Passwort?</p>
+                  <p><a href="index-de.html">Einloggen</a></p>
+              </div>
+            </div>
               
         </div>
       </div>

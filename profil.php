@@ -56,7 +56,7 @@ session_start();?>
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Biztos ki akar lépni?</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Do you want to log out?</h1>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
