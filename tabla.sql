@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `2-es csoport`
 --
-
+CREATE DATABASE 2-es csoport CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
 -- --------------------------------------------------------
 
 --
