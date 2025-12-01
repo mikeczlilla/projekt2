@@ -33,7 +33,7 @@ CREATE TABLE `tabla` (
   `vezeteknev` varchar(50) NOT NULL,
   `keresztnev` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL,
+  `jelszo` varchar(255) NOT NULL,
   `szdatum` date NOT NULL,
   `tszam` varchar(25) NOT NULL,
   `iranyitoszam` int(4) NOT NULL,
