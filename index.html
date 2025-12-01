@@ -17,20 +17,20 @@
     <div class="card">
         <div class="card-body">
             <h1>Bejelentkezés</h1>
-            <form>
+            <form action="./php/bejelentkezes.php" method="post">
                 <div class="mb-3">
                   <label for="email_b" class="form-label">Email cím</label>
-                  <input type="email" class="form-control" id="email_b" aria-describedby="emailHelp">
+                  <input type="email" name="email_b" class="form-control" id="email_b" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="jelszo_b" class="form-label">Jelszó</label>
-                  <input type="password" class="form-control" id="jelszo_b">
+                  <input type="password" name="jelszo_b" class="form-control" id="jelszo_b">
                 </div>
                 <div class="mb-3 form-check" id="checkB">
                   <input type="checkbox" class="form-check-input" id="emlek">
                   <label class="form-check-label" for="emlek">Emlékezz rám</label>
                 </div>
-                <button type="submit" class="btn btn-primary" formaction="profil.html">Bejelentkezés</button>
+                <button type="submit" class="btn btn-primary">Bejelentkezés</button>
                 
                 <div id="div-regisztracio">
                     <p>Nincs még fiókja?</p>
