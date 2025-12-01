@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../regisztracio.css">
+    <link rel="stylesheet" href="regisztracio.css">
   </head>
   <body>
     <div class="list-group" style="width: fit-content;">
@@ -18,58 +18,68 @@
         <div class="card-body">
             <h1>Registrierung</h1>
             <div id="section1">
-                <form class="row g-4">
+                <form class="row g-4" action="./php/regiszt.php" method="post">
+                  
                   <div class="mb-3 col-md-6">
-                    <label class="form-label">Familienname</label>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <label for="knev" class="form-label">Vorname</label>
+                    <input type="text" id="knev" name="knev" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
                   <div class="mb-3 col-md-6">
-                    <label class="form-label">Vorname</label>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <label for="vnev" class="form-label">Familienname</label>
+                    <input type="text" id="vnev" name="vnev" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
                   <div class="mb-3 col-md-6">
-                    <label class="form-label">Nutzername</label>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <label for="fnev" class="form-label">Nutzername</label>
+                    <input type="text" id="fnev" name="fnev" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div><br>
                   <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email </label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Passwort</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <label for="jelszo1" class="form-label">Passwort</label>
+                    <input type="password" name="jelszo1" class="form-control" id="jelszo1">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Passwort wiederholen</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <label for="jelszo2" class="form-label">Passwort wiederholen</label>
+                    <input type="password" name="jelszo2" class="form-control" id="jelszo2">
                   </div>
                   <hr>
                   <div class="col-md-6">
-                    <label for="inputAddress2" class="form-label">Telefonnummer</label>
-                    <input type="number" class="form-control" id="inputAddress2" placeholder="zB. +49171123456">
+                    <label for="tfon" class="form-label">Telefonnummer</label>
+                    <input type="number" name="tfon" class="form-control" id="tfon" placeholder="pl. 06301234567">
                   </div>
                   <div class="col-md-6">
                     <label for="inputAddress2" class="form-label">Geburtsdatum</label>
                     <input type="date" class="form-control" id="inputAddress2" min="1900-01-01" max="2026-01-01">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputAddress" class="form-label">Postleitzahl</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="zB. 10115">
+                    <label for="irszam" class="form-label">Postleitzahl</label>
+                    <input type="text" name="irszam" class="form-control" id="irszam" placeholder="pl. 1234">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputAddress2" class="form-label">Stadt</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="zB. Berlin">
+                    <label for="telepules" class="form-label">Stadt</label>
+                    <input type="text" name="telepules" class="form-control" id="telepules" placeholder="pl. Szentes">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputAddress2" class="form-label">Straße</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="zB. Musterstraße">
+                    <label for="utca" class="form-label">Straße</label>
+                    <input type="text" name="utca" class="form-control" id="utca" placeholder="pl. Kossuth utca">
                   </div>
                   
                   <div class="col-md-6">
-                    <label for="inputAddress2" class="form-label">Hausnummer</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="zB. 17A">
+                    <label for="hszam" class="form-label">Hausnummer</label>
+                    <input type="text" name="hszam" class="form-control" id="hszam" placeholder="pl. 12 / B">
                   </div>
                   
+                  <div id="section2">
+                    <br>
+                    <button type="submit" value="submit" class="btn btn-primary">Registrierung</button>
+                  
+                  <div id="div-regisztracio">
+                      <p>Haben Sie schon ein Passwort?</p>
+                      <p><a href="index-de.html">Einloggen</a></p>
+                  </div>
+                </div>
                 </form>
 
                 

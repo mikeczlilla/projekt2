@@ -1,3 +1,5 @@
+<?php
+session_start();?>
 <!doctype html>
 <html lang="hu">
   <head>
@@ -20,12 +22,36 @@
             <form>
                 <ul class="list-group">
                     <li class="list-group-item active" aria-current="true">Adatok</li>
-                    <li class="list-group-item"><b>Név: </b></li>
-                    <li class="list-group-item"><b>Felhasználónév: </b></li>
-                    <li class="list-group-item"><b>Email cím: </b></li>
-                    <li class="list-group-item"><b>Telefonszám: </b></li>
-                    <li class="list-group-item"><b>Lakcím: </b></li>
-                    <li class="list-group-item"><b>Születési idő: </b></li>
+                    <li class="list-group-item"><b>Név: </b>
+                    <?php
+                     echo $_SESSION["vezeteknev"] . " " . $_SESSION["keresztnev"];
+                    ?>
+                    </li>
+                    <li class="list-group-item"><b>Felhasználónév: </b>
+                    <?php
+                     echo $_SESSION["username"];
+                    ?>
+                    </li>
+                    <li class="list-group-item"><b>Email cím: </b>
+                    <?php
+                     echo $_SESSION["email"];
+                    ?>
+                    </li>
+                    <li class="list-group-item"><b>Telefonszám: </b>
+                    <?php
+                     echo $_SESSION["tszam"];
+                    ?>
+                    </li>
+                    <li class="list-group-item"><b>Lakcím: </b>
+                    <?php
+                     echo $_SESSION["iranyitoszam"] . " " . $_SESSION["varos"] . " " . $_SESSION["utca"] . " " . $_SESSION["haz_szam"] . ".";
+                    ?>
+                    </li>
+                    <li class="list-group-item"><b>Születési idő: </b>
+                    <?php
+                     echo $_SESSION["szdatum"];
+                    ?>
+                    </li>
                   </ul>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       Kilépés
@@ -34,7 +60,7 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Biztos ki akar lépni?</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Do you want to log out?</h1>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>

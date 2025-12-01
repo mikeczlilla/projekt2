@@ -18,7 +18,7 @@
         <div class="card-body">
             <h1>Regisztráció</h1>
             <div id="section1">
-                <form class="row g-4">
+                <form class="row g-4" action="./php/regiszt.php" method="post">
                   <div class="mb-3 col-md-6">
                     <label for="vnev" class="form-label">Vezetéknév</label>
                     <input type="text" id="vnev" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
@@ -70,21 +70,20 @@
                     <input type="text" class="form-control" id="hszam" placeholder="pl. 12 / B">
                   </div>
                   
+                  <div id="section2">
+                    <br>
+                    <button type="submit" value="submit" class="btn btn-primary">Regisztráció</button>
+                  
+                  <div id="div-regisztracio">
+                      <p>Van már fiókja?</p>
+                      <p><a href="index.html">Bejelentkezés</a></p>
+                  </div>
+                </div>
                 </form>
 
                 
             </div>
-            <div id="section2">
-                <br>
-              <form action="index.html">
-                <button type="submit" class="btn btn-primary">Regisztráció</button>
-              </form>
-              
-              <div id="div-regisztracio">
-                  <p>Van már fiókja?</p>
-                  <p><a href="index.html">Bejelentkezés</a></p>
-              </div>
-            </div>
+            
               
         </div>
       </div>
