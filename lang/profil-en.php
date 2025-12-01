@@ -1,67 +1,66 @@
 <?php
 session_start();?>
 <!doctype html>
-<html lang="de">
+<html lang="hu">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profil</title>
+    <title>Profile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../profil.css">
   </head>
   <body>
-    
     <div class="card" id="cardMain">
         <div class="card-body" id="cardB1">
-            <h1>Profil</h1>
+            <h1>Profile</h1>
             <form>
                 <ul class="list-group">
-                    <li class="list-group-item active" aria-current="true">Daten</li>
+                    <li class="list-group-item active" aria-current="true">Datas</li>
                     <li class="list-group-item"><b>Name: </b>
                     <?php
                      echo $_SESSION["keresztnev"] . " " . $_SESSION["vezeteknev"];
                     ?>
                     </li>
-                    <li class="list-group-item"><b>Nutzername: </b>
+                    <li class="list-group-item"><b>Username: </b>
                     <?php
                      echo $_SESSION["username"];
                     ?>
                     </li>
-                    <li class="list-group-item"><b>Email: </b>
+                    <li class="list-group-item"><b>Email address: </b>
                     <?php
                      echo $_SESSION["email"];
                     ?>
                     </li>
-                    <li class="list-group-item"><b>Telefonnummer: </b>
+                    <li class="list-group-item"><b>Phone number: </b>
                     <?php
                      echo $_SESSION["tszam"];
                     ?>
                     </li>
-                    <li class="list-group-item"><b>Adresse: </b>
+                    <li class="list-group-item"><b>Address: </b>
                     <?php
                      echo $_SESSION["iranyitoszam"] . " " . $_SESSION["varos"] . " " . $_SESSION["utca"] . " " . $_SESSION["haz_szam"] . ".";
                     ?>
                     </li>
-                    <li class="list-group-item"><b>Geburtsdatum: </b>
+                    <li class="list-group-item"><b>Date of birth: </b>
                     <?php
                      echo $_SESSION["szdatum"];
                     ?>
                     </li>
                   </ul>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Ausloggen
+                      Log out
                     </button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Sind Sie sicher, dass Sie aufhören wollen?</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Do you want to log out?</h1>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zurück</button>
-                            <button type="submit" formaction="index-de.html" class="btn btn-primary">Ausloggen</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                            <button type="submit" formaction="index-en.html" class="btn btn-primary">Log out</button>
                           </div>
                         </div>
                       </div>
