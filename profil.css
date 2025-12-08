@@ -29,6 +29,9 @@ body {
     margin: 5px;
     font-size: 20px;
   }
+  input{
+    width: 300px;
+  }
   @media (width > 900px) {
     .card-body {
       min-width: 900px;

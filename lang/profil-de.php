@@ -20,34 +20,34 @@ session_start();?>
                 <ul class="list-group">
                     <li class="list-group-item active" aria-current="true">Daten</li>
                     <li class="list-group-item"><b>Name: </b>
-                    <?php
+                    <input type="text" value="<?php
                      echo $_SESSION["keresztnev"] . " " . $_SESSION["vezeteknev"];
-                    ?>
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Nutzername: </b>
-                    <?php
+                    <input type="text" value="<?php
                      echo $_SESSION["username"];
-                    ?>
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Email: </b>
-                    <?php
+                    <input type="email" value="<?php
                      echo $_SESSION["email"];
-                    ?>
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Telefonnummer: </b>
-                    <?php
+                    <input type="tel" value="<?php
                      echo $_SESSION["tszam"];
-                    ?>
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Adresse: </b>
-                    <?php
+                    <input type="text" value="<?php
                      echo $_SESSION["iranyitoszam"] . " " . $_SESSION["varos"] . " " . $_SESSION["utca"] . " " . $_SESSION["haz_szam"] . ".";
-                    ?>
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Geburtsdatum: </b>
-                    <?php
+                    <input type="date" value="<?php
                      echo $_SESSION["szdatum"];
-                    ?>
+                    ?>">
                     </li>
                   </ul>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">

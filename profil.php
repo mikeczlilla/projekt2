@@ -1,5 +1,17 @@
 <?php
-session_start();?>
+session_start();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "2-es csoport";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+?>
 <!doctype html>
 <html lang="hu">
   <head>
@@ -15,38 +27,42 @@ session_start();?>
     <div class="card" id="cardMain">
         <div class="card-body" id="cardB1">
             <h1>Profil</h1>
-            <form>
+            <form action="./php/regiszt.php" method="post">
                 <ul class="list-group">
                     <li class="list-group-item active" aria-current="true">Adatok</li>
                     <li class="list-group-item"><b>Név: </b>
-                    <?php
+                    <input type="text" value="<?php
                      echo $_SESSION["vezeteknev"] . " " . $_SESSION["keresztnev"];
-                    ?>
+                    ?>">
+                    
                     </li>
                     <li class="list-group-item"><b>Felhasználónév: </b>
-                    <?php
+                    <input type="text" value="<?php
                      echo $_SESSION["username"];
-                    ?>
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Email cím: </b>
-                    <?php
+                    <input type="email" value="<?php
                      echo $_SESSION["email"];
-                    ?>
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Telefonszám: </b>
-                    <?php
+                    <input type="tel" value="<?php
                      echo $_SESSION["tszam"];
-                    ?>
+                    ?>">
+                    
                     </li>
                     <li class="list-group-item"><b>Lakcím: </b>
-                    <?php
+                    <input type="text" value="<?php
                      echo $_SESSION["iranyitoszam"] . " " . $_SESSION["varos"] . " " . $_SESSION["utca"] . " " . $_SESSION["haz_szam"] . ".";
-                    ?>
+                    ?>">
+                    
                     </li>
                     <li class="list-group-item"><b>Születési idő: </b>
-                    <?php
+                    <input type="date" value="<?php
                      echo $_SESSION["szdatum"];
-                    ?>
+                    ?>">
+                    
                     </li>
                   </ul>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -56,7 +72,7 @@ session_start();?>
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Do you want to log out?</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Biztos ki akar lépni?</h1>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
