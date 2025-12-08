@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
     }
 }
 
-if ($arrayJelszo = $jelszo) 
+if ($arrayJelszo == $jelszo) 
 {
     $sql = "SELECT username, vezeteknev, keresztnev, szdatum, tszam, iranyitoszam, varos, utca, haz_szam FROM tabla WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
