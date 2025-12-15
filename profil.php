@@ -92,9 +92,6 @@ if (!$conn) {
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-success">
-                      Mentés
-                    </button>
             </form>
               
         </div>
