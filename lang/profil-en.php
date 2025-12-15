@@ -19,35 +19,48 @@ session_start();?>
                 <ul class="list-group">
                     <li class="list-group-item active" aria-current="true">Datas</li>
                     <li class="list-group-item"><b>Name: </b>
-                    <input type="text" value="<?php
-                     echo $_SESSION["keresztnev"] . " " . $_SESSION["vezeteknev"];
+                    <input type="text" style="width: 150px;" value="<?php
+                     echo $_SESSION["vezeteknev"];
+                    ?>">
+                    <input type="text" style="width: 150px;" value="<?php
+                     echo $_SESSION["keresztnev"];
+                     
                     ?>">
                     </li>
                     <li class="list-group-item"><b>Username: </b>
-                    <input type="text" value="<?php
+                    <input type="text" style="width: 150px;" value="<?php
                      echo $_SESSION["username"];
                     ?>">
                     </li>
                     <li class="list-group-item"><b>Email address: </b>
-                    <input type="email" value="<?php
+                    <input type="email" style="width: 270px;" value="<?php
                      echo $_SESSION["email"];
                     ?>">
                     </li>
                     <li class="list-group-item"><b>Phone number: </b>
-                    <input type="tel" value="<?php
+                    <input type="tel" style="width: 150px;" value="<?php
                      echo $_SESSION["tszam"];
                     ?>">
+                    
                     </li>
                     <li class="list-group-item"><b>Address: </b>
-                    <input type="text" value="<?php
-                     echo $_SESSION["iranyitoszam"] . " " . $_SESSION["varos"] . " " . $_SESSION["utca"] . " " . $_SESSION["haz_szam"] . ".";
+                    <input type="text" style="width: 50px;" value="<?php
+                     echo $_SESSION["iranyitoszam"];
+                    ?>">
+                    <input type="text" style="width: 150px;" value="<?php
+                     echo $_SESSION["varos"];
+                    ?>">
+                    <input type="text"style="width: 250px;" value="<?php
+                     echo $_SESSION["utca"];
+                    ?>">
+                    <input type="text" style="width: 50px;" value="<?php
+                     echo$_SESSION["haz_szam"] . ".";
                     ?>">
                     </li>
                     <li class="list-group-item"><b>Date of birth: </b>
-                    <input type="date" value="<?php
+                    <input type="date" style="width: 150px;" value="<?php
                      echo $_SESSION["szdatum"];
                     ?>">
-                    </li>
                   </ul>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       Log out

@@ -31,35 +31,46 @@ if (!$conn) {
                 <ul class="list-group">
                     <li class="list-group-item active" aria-current="true">Adatok</li>
                     <li class="list-group-item"><b>Név: </b>
-                    <input type="text" value="<?php
-                     echo $_SESSION["vezeteknev"] . " " . $_SESSION["keresztnev"];
+                    <input type="text" style="width: 150px;" value="<?php
+                     echo $_SESSION["vezeteknev"];
                     ?>">
-                    
+                    <input type="text" style="width: 150px;" value="<?php
+                     echo $_SESSION["keresztnev"];
+                     
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Felhasználónév: </b>
-                    <input type="text" value="<?php
+                    <input type="text" style="width: 150px;" value="<?php
                      echo $_SESSION["username"];
                     ?>">
                     </li>
                     <li class="list-group-item"><b>Email cím: </b>
-                    <input type="email" value="<?php
+                    <input type="email" style="width: 270px;" value="<?php
                      echo $_SESSION["email"];
                     ?>">
                     </li>
                     <li class="list-group-item"><b>Telefonszám: </b>
-                    <input type="tel" value="<?php
+                    <input type="tel" style="width: 150px;" value="<?php
                      echo $_SESSION["tszam"];
                     ?>">
                     
                     </li>
                     <li class="list-group-item"><b>Lakcím: </b>
-                    <input type="text" value="<?php
-                     echo $_SESSION["iranyitoszam"] . " " . $_SESSION["varos"] . " " . $_SESSION["utca"] . " " . $_SESSION["haz_szam"] . ".";
+                    <input type="text" style="width: 50px;" value="<?php
+                     echo $_SESSION["iranyitoszam"];
                     ?>">
-                    
+                    <input type="text" style="width: 150px;" value="<?php
+                     echo $_SESSION["varos"];
+                    ?>">
+                    <input type="text"style="width: 250px;" value="<?php
+                     echo $_SESSION["utca"];
+                    ?>">
+                    <input type="text" style="width: 50px;" value="<?php
+                     echo$_SESSION["haz_szam"] . ".";
+                    ?>">
                     </li>
                     <li class="list-group-item"><b>Születési idő: </b>
-                    <input type="date" value="<?php
+                    <input type="date" style="width: 150px;" value="<?php
                      echo $_SESSION["szdatum"];
                     ?>">
                     
@@ -81,6 +92,9 @@ if (!$conn) {
                         </div>
                       </div>
                     </div>
+                    <button type="submit" class="btn btn-success">
+                      Mentés
+                    </button>
             </form>
               
         </div>
