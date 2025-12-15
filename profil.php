@@ -59,7 +59,7 @@ if (!$conn) {
                     <input type="text" style="width: 50px;" value="<?php
                      echo $_SESSION["iranyitoszam"];
                     ?>">
-                    <input type="text" style="width: 150px;" value="<?php
+                    <input type="text" style="width: 200px;" value="<?php
                      echo $_SESSION["varos"];
                     ?>">
                     <input type="text"style="width: 250px;" value="<?php
